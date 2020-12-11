@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Servicii II "Burlacu Ghenadie"</title>
+    <link rel="icon" href="../images/tooth.png" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Pagina oficială a cabinetului stomatologic ÎI „Burlacu Ghenadie”" />
+    <meta name="keywords" content="Stomatologie, stomatolog, cabinet stomatologic" />
+    <meta name="author" content="Cobzac Diana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <script type="text/javascript" src="../js/test.js"></script>
+    <script type="text/javascript" src="../js/slider.js"></script>
+</head>
+
+<body class="flex" onload="launchSlider(); onload()">
+    <div class="menu">
+        <div class="menu_header">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="logo" width="200" />
+            </a>
+            <div style="display: none;" class="space-fill"></div>
+            <div class="icon_menu" onclick="toggleMenu()" title="Meniu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="menu_items" id="menu_items">
+            <a href="../index.html">Despre noi</a>
+            <a href="services.html">Servicii</a>
+            <a href="contacts.html">Contacte</a>
+            <a href="formular.html">Programare</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="row">
+            <div class="des_left col-12">
+                <div class="text-box slider">
+                    <i class="slider-nav fas fa-angle-left" onclick="prevSlider()" title="Imaginea precedentă"></i>
+
+                    <img class="slide" src="../images/slider/out1.jpg"/>
+
+                    <i class="slider-nav fas fa-angle-right" onclick="nextSlider()" title="Imaginea următoare"></i>
+
+                    <div class="legend">
+                        <i class="fas fa fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>
+            <span class="copy">&copy;</span> Copyright <span id="year"></span> <br />
+            <a href="mailto:cobzacdiana@gmail.com">cobzacdiana@gmail.com</a>
+        </small>
+    </footer>
+</body>

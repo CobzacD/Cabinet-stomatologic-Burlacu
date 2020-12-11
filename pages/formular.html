@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Programare II "Burlacu Ghenadie"</title>
+    <link rel="icon" href="../images/tooth.png" type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Pagina oficială a cabinetului stomatologic ÎI „Burlacu Ghenadie”" />
+    <meta name="keywords" content="Stomatologie, stomatolog, cabinet stomatologic" />
+    <meta name="author" content="Cobzac Diana" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../css/design.css" />
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <script type="text/javascript" src="../js/test.js"></script>
+</head>
+
+<body class="flex" onload="onloadFormular()">
+    <div class="menu">
+        <div class="menu_header">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="logo" width="200" />
+            </a>
+            <div style="display: none;" class="space-fill"></div>
+            <div class="icon_menu" onclick="toggleMenu()" title="Meniu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="menu_items" id="menu_items">
+            <a href="../index.html">Despre noi</a>
+            <a href="services.html">Servicii</a>
+            <a href="contacts.html">Contacte</a>
+            <a href="" class="active">Programare</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="text-box">
+            <h3>Pentru programare on-line completați formularul de mai jos:</h3>
+            <form action="mailto:burlacughenadie@gmail.com" method="post" enctype="text/plain" class="form">
+                <table>
+                    <tr>
+                        <td>Nume:</td>
+                        <td>
+                            <input type="text" name="Nume" placeholder="Introduceți Numele" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prenume:</td>
+                        <td>
+                            <input type="text" name="Prenume" placeholder="Introduceți Prenumele" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Localitatea:</td>
+                        <td>
+                            <input type="text" name="Localitatea" placeholder="Introduceți Localitatea"
+                                value="Ungheni" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vârsta:</td>
+                        <td>
+                            <input type="number" max="100" value="18" placeholder="Introduceți Vârsta" />ani
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Număr de telefon:</td>
+                        <td>
+                            <input pattern="[0-9]{9}" id="phone_input" type="text" required
+                                placeholder="Introduceți numărul de telefon" />
+                            <span id="txt">Utilizati 9 cifre</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Adresa electronică:</td>
+                        <td>
+                            <input type="email" name="email_user" placeholder="Introduceți adresa electronică" />
+                        </td>
+                    </tr>
+                </table>
+
+                <br />
+                <label>
+                    Lăsați un comentariu în caseta de mai jos:
+                </label>
+                <br />
+                <textarea cols="60" rows="8"></textarea>
+                <br />
+                <input type="reset" value="Șterge" />
+                <input type="submit" value="Trimite" />
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <small>
+            <span class="copy">&copy;</span> Copyright <span id="year"></span> <br />
+            <a href="mailto:cobzacdiana@gmail.com">cobzacdiana@gmail.com</a>
+        </small>
+    </footer>
+</body>
+
+</html>

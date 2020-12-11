@@ -1,0 +1,228 @@
+/* pentru aranjarea paginii Servicii */
+.row {
+  display: inline-block;
+  width: 100%;
+}
+
+/* pentru butoanele din formularul de programare */
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  border: 0;
+  color: #ffffff;
+  background-color: #f78121;
+  font-size: 0.858rem;
+  padding: 10px 40px;
+  line-height: 16px;
+  letter-spacing: 0.72px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* pentru input-urile din formularul de programare */
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 10px;
+  border-bottom: 2px solid #22223a;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  border-bottom: 2px solid #d56c2c;
+  outline: 0;
+}
+
+input:invalid {
+  border-bottom: 2px solid #ff0000;
+}
+
+textarea {
+  border: 0;
+}
+
+/* setarea punctelor de control */
+@media (max-width: 770px) {
+  .menu {
+    height: auto;
+    background-color: rgba(34, 34, 58, 0.7);
+  }
+
+  .menu .menu_header {
+    display: flex;
+    align-items: center;
+    background-color: #22223a;
+  }
+
+  .menu .menu_items a {
+    display: block;
+    line-height: 5vh;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  .menu.small-menu .menu_items a {
+    padding-left: 40px !important;
+  }
+
+  .menu .menu_items a:hover:before,
+  .menu .menu_items a.active::before {
+    content: "";
+    background-image: url(../images/tooth1.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width: 30px;
+    position: absolute;
+    height: 20px;
+    left: 0;
+    top: 25px;
+    background-position: 10px center;
+
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+  }
+
+  .menu .menu_items a:hover:before {
+    animation-name: bounce-4;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+
+  /* animatia din hamburger-menu */
+  @keyframes bounce-4 {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+      transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+      transform: scale(.9, 1.1) translateY(-10px);
+    }
+
+    50% {
+      transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+
+  .menu .menu_items {
+    display: none;
+    backdrop-filter: blur(5px);
+    background-color: rgba(34, 34, 58, 0.7);
+  }
+
+  .menu .icon_menu {
+    cursor: pointer;
+    display: block;
+    float: right;
+    font-size: 2em;
+    color: #d56c2c;
+    padding: 0 3vw;
+  }
+
+  .menu .space-fill {
+    display: block !important;
+    flex: 1;
+  }
+
+  .des_left {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .des_right {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 771px) {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .menu .menu_items {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1250px) {
+  .des_left {
+    float: left;
+  }
+
+  .des_right {
+    float: right;
+  }
+}
+
+@media (min-width: 1251px) {
+  .des_left {
+    float: left;
+  }
+
+  .des_right {
+    float: right;
+  }
+}
